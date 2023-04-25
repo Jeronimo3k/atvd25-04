@@ -1,0 +1,25 @@
+<template>
+
+	<lightning-card>
+		<div if:true={visible}>
+			<h1 class="slds-text-heading_large">Quem é esse pokemon?</h1>
+
+
+			<img src={imagem1}>
+
+
+		</div>
+
+		<div if:false={visible}>
+			<h1 class="slds-text-heading_large">Esse é o Flareon</h1>
+
+			<img src={imagem2}>
+
+
+		</div>
+		<lightning-button variant="success" label="Aparecer Pokemon" title="Successful action" onclick={mostrar}
+			class="btn">
+		</lightning-button>
+	</lightning-card>
+
+</template>
