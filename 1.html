@@ -1,0 +1,38 @@
+<template>
+	<lightning-card>
+
+		<div class="slds-theme_default">
+			<h1 class="slds-text-heading_large"> Informações da Empresa </h1>
+
+			<p> Empresa: {Empresa} </p>
+			<p> CNPJ: {CNPJ} </p>
+			<p> Endereço: {Endereco} </p>
+
+		</div>
+
+
+		<div class="slds-theme_default" if:true={visible}>
+
+			<h1 class="slds-text-heading_large"> Informações do Produto </h1>
+			<p> Produto: {Produto} </p>
+			<p> Descrição: {Descrição} </p>
+			<p> Preço: {Preço} </p>
+
+
+		</div>
+
+
+
+		<div class="slds-theme_default" if:true={visible}>
+			<h1 class="slds-text-heading_large"> Promoções </h1>
+
+			<p> oferta1: {oferta1} </p>
+			<p> oferta2: {oferta2} </p>
+
+		</div>
+
+		<lightning-button variant="success" label="Trocar div" title="Successful action" onclick={trocarDiv} class="Massa">
+		</lightning-button>
+
+	</lightning-card>
+</template>
